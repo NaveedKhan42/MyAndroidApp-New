@@ -35,7 +35,6 @@ class PopularTVShowsAdapter(private var showsList: List<TVShow>) :
         fun bind(tvShow:TVShow){
             binding.tvshow = tvShow
             binding.tvshowBanner.loadImage(tvShow.poster_path)
-            binding.executePendingBindings()
         }
     }
 

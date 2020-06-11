@@ -30,8 +30,6 @@ class PopularMovieDetailFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_popular_movie_detail, container, false)
         binding.movie = movieSelected
         binding.imageView.loadImage(movieSelected.poster_path)
-        binding.executePendingBindings()
-
         return binding.root
     }
 

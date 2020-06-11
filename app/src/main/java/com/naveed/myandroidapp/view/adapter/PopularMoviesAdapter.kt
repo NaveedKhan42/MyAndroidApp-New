@@ -40,7 +40,6 @@ class PopularMoviesAdapter(private val movieList: List<Movies>, val listener : O
         fun bind(movie:Movies){
             binding.movie = movie
             binding.movieBanner.loadImage(movie.poster_path)
-            binding.executePendingBindings()
         }
     }
 

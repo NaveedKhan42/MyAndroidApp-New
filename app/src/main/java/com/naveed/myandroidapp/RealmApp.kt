@@ -16,7 +16,7 @@ class RealmApp : Application() {
     }
 
     /**
-     * Creates Realm configuration and initializes it.     *
+     * Creates Realm configuration and initializes it.
      */
     private fun initRealm(){
         Realm.init(this)
