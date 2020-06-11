@@ -6,10 +6,10 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 /**
- * Retrofit Interface: holds the different RESTful API functions
+ * Retrofit Interface: holds the different RESTful API functions signature and URI path
  *
  */
-interface API_EndPoints {
+interface TmdbApiEndPoints {
 
     /**
      * Fetches Popular Movies

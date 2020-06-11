@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name="com.naveed.myandroidapp.realm.RealmApp">
+        android:name="com.naveed.myandroidapp.RealmApp">
 
         <activity android:name="com.naveed.myandroidapp.view.ui.activity.MainActivity">
             <intent-filter>

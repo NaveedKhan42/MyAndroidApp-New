@@ -1,4 +1,4 @@
-package com.naveed.myandroidapp.realm
+package com.naveed.myandroidapp
 
 import android.app.Application
 import android.util.Log
@@ -6,13 +6,12 @@ import io.realm.Realm
 import io.realm.RealmConfiguration
 
 /**
- * Application class, to initialize the Realm db only once
+ * Application class extension to initialize the Realm db only once
  */
 class RealmApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        Log.d("App","OnCreate Called")
         initRealm()
     }
 

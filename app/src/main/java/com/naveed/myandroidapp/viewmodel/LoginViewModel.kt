@@ -22,8 +22,8 @@ class LoginViewModel: ViewModel() {
     private fun checkIfUserExists() : Boolean{
         val name: String = let { userName.get() }.toString()
         val password: String = let { userPassword.get() }.toString()
-        val usersData: List<User> = usersRepo.getUser(name, password)
-        if(usersData.isNotEmpty()){
+        val users: List<User> = usersRepo.getUser(name, password)
+        if(users.isNotEmpty()){
             Log.d("Login","Validation Successful")
             return true
         }

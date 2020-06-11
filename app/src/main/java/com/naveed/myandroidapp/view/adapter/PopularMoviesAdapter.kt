@@ -8,7 +8,7 @@ import com.naveed.myandroidapp.extension.loadImage
 import com.naveed.myandroidapp.model.Movies
 
 /**
- * RecyclerView Adapter for the Movies
+ * RecyclerView Adapter for the Movies Screen
  */
 class PopularMoviesAdapter(private val movieList: List<Movies>, val listener : OnMovieClickListener
         ) : RecyclerView.Adapter<PopularMoviesAdapter.MovieListViewHolder>() {

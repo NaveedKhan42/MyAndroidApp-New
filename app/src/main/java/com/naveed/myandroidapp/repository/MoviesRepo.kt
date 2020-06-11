@@ -3,12 +3,15 @@ package com.naveed.myandroidapp.repository
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.naveed.myandroidapp.model.PopularMovies
-import com.naveed.myandroidapp.network.API_EndPoints
+import com.naveed.myandroidapp.network.TmdbApiEndPoints
 import com.naveed.myandroidapp.network.RetrofitService
 import retrofit2.Call
 import retrofit2.Response
 
-
+/**
+ * Repository class for Movies : Uses Retrofit for data operations
+ *
+ */
 class MoviesRepo {
 
     /**
@@ -16,7 +19,7 @@ class MoviesRepo {
      */
     fun getPopularMovies() : LiveData<PopularMovies> {
         val apiResponse = MutableLiveData<PopularMovies>()
-        val request = RetrofitService.buildService(API_EndPoints::class.java)
+        val request = RetrofitService.buildService(TmdbApiEndPoints::class.java)
         val call = request.getPopularMovies()
 
         call.enqueue(object : retrofit2.Callback<PopularMovies> {

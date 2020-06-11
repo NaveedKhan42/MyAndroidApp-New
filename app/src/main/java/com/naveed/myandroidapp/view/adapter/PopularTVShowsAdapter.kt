@@ -8,7 +8,7 @@ import com.naveed.myandroidapp.extension.loadImage
 import com.naveed.myandroidapp.model.TVShow
 
 /**
- * RecyclerView Adapter for the TV Shows
+ * RecyclerView Adapter for the TV Shows Screen
  */
 class PopularTVShowsAdapter(private var showsList: List<TVShow>) :
     RecyclerView.Adapter<PopularTVShowsAdapter.TVShowViewHolder>() {
